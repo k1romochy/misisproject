@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; /* Белый фон для страницы */
+}
+
+.header {
+    background-color: yellow; /* Желтый фон для заголовка */
+    padding: 20px;
+    text-align: center; /* Центрирование текста */
+}
+
+.content {
+    padding: 20px;
+    text-align: center; /* Центрирование текста */
+}
+
+.contact-info {
+    background-color: yellow; /* Желтый фон для контактной информации */
+    padding: 20px;
+    border-radius: 5px; /* Закругленные углы */
+    display: inline-block; /* Центрирование блока */
+}
+.button-container {
+    text-align: center; /* Центрирование кнопок */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.button {
+    background-color: yellow; /* Желтый фон для кнопок */
+    color: black; /* Цвет текста кнопки */
+    padding: 15px 30px; /* Увеличенные отступы для кнопок */
+    border: none;
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Курсор при наведении */
+    font-size: 20px; /* Увеличенный размер шрифта */
+    margin: 15px; /* Отступ между кнопками */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    display: inline-block; /* Чтобы кнопки были на одной линии */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+.button:hover {
+    background-color: gold; /* Изменение цвета при наведении */
+}
