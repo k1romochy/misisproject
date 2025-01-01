@@ -1,0 +1,78 @@
+body, h1, p, div, nav, a, button, header, footer, main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #333;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  min-width: 120px;
+}
+
+.button:hover {
+  background-color: #e0e0e0;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content {
+  text-align: center;
+  padding: 50px 20px;
+  flex: 1;
+}
+
+.main-title {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.description {
+  font-size: 18px;
+  margin: 20px 0;
+  color: #ffffff;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #000000;
+  color: #aaa;
+  font-size: 14px;
+}
