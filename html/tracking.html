@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Отслеживание достижений</title>
-    <link rel="stylesheet" href="C:\Users\malvoid\Downloads\html\css\tracking.css">
+    <link rel="stylesheet" href="D:\vscode\misis\css\tracking.css">
 </head>
 <body>
-    <div class="header">
-        <div class="main-text">
-        <h1>Отслеживание погодных условий</h1>
-        </div>
-    </div>
-    <div class="main-container">
-        <div class="input-field">
-          <span class="label">Ваш город</span>
+    <header class="header">
+        <div class="logo-text">Logo</div>
+        <nav class="menu">
+            <a href="index.html" class="button">Главная</a>
+            <a href="news.html" class="button">Новости</a>
+            <a href="contacts.html" class="button">Контакты</a>
+        </nav>
+    </header>
+    <main class="main-container">
+      <h1 class="main-title">Отслеживание погодных условий</h1>
+      <div class="input-field">
+          <label for="city" class="label">Ваш город</label>
           <div class="input">
-            <input class="input-1" /><span class="value">Value</span>
+              <input id="city" class="input-box" type="text" placeholder="Введите город">
           </div>
-        </div>
-        <button class="button-group">
-          <div class="button"><span class="send-button">Отправить</span></div>
-        </button>
       </div>
-    </div>
-    <div class="button-container">
-        <a href="index.html" class="button-z">На главную</a>
-        <a href="news.html" class="button-z">Новости</a>
-        <a href="contacts.html" class="button-z">Контакты</a>
-    </div>
+      <button class="submit-button">Отправить</button>
+      <div id="weather-result" class="weather-result"></div>
+    </main>  
+    <footer class="footer">
+        <p>Сайт используется в познавательных целях, копирование и распространение запрещено</p>
+    </footer>
+    <script src="D:\vscode\misis\js\tracking.js"></script>
 </body>
 </html>

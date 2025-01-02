@@ -1,45 +1,85 @@
-body {
+body, h1, h2, p, header, footer, nav, a, div {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: white; /* Белый фон для страницы */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: #fff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .header {
-    background-color: yellow; /* Желтый фон для заголовка */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    text-align: center; /* Центрирование текста */
+    background-color: #2a2a2a;
 }
 
-.content {
-    padding: 20px;
-    text-align: center; /* Центрирование текста */
-}
-
-.contact-info {
-    background-color: yellow; /* Желтый фон для контактной информации */
-    padding: 20px;
-    border-radius: 5px; /* Закругленные углы */
-    display: inline-block; /* Центрирование блока */
-}
-.button-container {
-    text-align: center; /* Центрирование кнопок */
-    margin-top: 20px; /* Отступ сверху */
+.menu {
+    display: flex;
+    gap: 10px;
 }
 
 .button {
-    background-color: yellow; /* Желтый фон для кнопок */
-    color: black; /* Цвет текста кнопки */
-    padding: 15px 30px; /* Увеличенные отступы для кнопок */
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
     border: none;
-    border-radius: 5px; /* Закругленные углы */
-    cursor: pointer; /* Курсор при наведении */
-    font-size: 20px; /* Увеличенный размер шрифта */
-    margin: 15px; /* Отступ между кнопками */
-    text-decoration: none; /* Убираем подчеркивание у ссылок */
-    display: inline-block; /* Чтобы кнопки были на одной линии */
-    transition: background-color 0.3s; /* Плавный переход цвета */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    min-width: 120px;
 }
 
 .button:hover {
-    background-color: gold; /* Изменение цвета при наведении */
+    background-color: #e0e0e0;
+    transform: scale(1.1);
+}
+
+.content {
+    text-align: center;
+    padding: 50px 20px;
+    flex: 1;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.separator {
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    margin: 10px auto 20px auto;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #dcdcdc;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #dcdcdc;
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #aaa;
+    font-size: 14px;
 }
